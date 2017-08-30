@@ -11809,7 +11809,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Import libraries necessary for this project</span>
@@ -11869,7 +11869,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Display a description of the dataset</span>
@@ -12011,7 +12011,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Select three indices of your choice you wish to sample from the dataset</span>
@@ -12166,7 +12166,7 @@ The first sample is lower than average on fresh and frozen, but higher for milk 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Make a copy of the DataFrame, using the &#39;drop&#39; function to drop the given feature</span>
@@ -12176,7 +12176,7 @@ The first sample is lower than average on fresh and frozen, but higher for milk 
 <span class="c1"># TODO: Split the data into training and testing sets(0.25) using the given feature as the target</span>
 <span class="c1"># Set a random state.</span>
 <span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
-<span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">new_data</span><span class="p">,</span> <span class="n">data</span><span class="o">.</span><span class="n">Fresh</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.25</span><span class="p">)</span>
+<span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">new_data</span><span class="p">,</span> <span class="n">data</span><span class="o">.</span><span class="n">Detergents_Paper</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.25</span><span class="p">)</span>
 
 <span class="c1"># TODO: Create a decision tree regressor and fit it to the training set</span>
 <span class="kn">from</span> <span class="nn">sklearn.tree</span> <span class="kn">import</span> <span class="n">DecisionTreeRegressor</span>
@@ -12200,7 +12200,7 @@ The first sample is lower than average on fresh and frozen, but higher for milk 
 <div class="prompt"></div>
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>0.994703253364
+<pre>0.728655181254
 </pre>
 </div>
 </div>
@@ -12230,7 +12230,7 @@ The first sample is lower than average on fresh and frozen, but higher for milk 
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong>
-I attempted to predict the annual spending on detergents and paper products. The coefficient of determination was 0.995, giving a strong inidication that the regressor could accurately predict the 'Detergents_Paper' value from other features. This implies that the 'Detergents_Paper' feature is not an important feature to include when considering relevance.</p>
+I attempted to predict the annual spending on detergents and paper products. The coefficient of determination was 0.729, giving an inidication that the regressor could provide a reasonable prediction for the 'Detergents_Paper' value from other features, but without the ability to visualize the residuals, this alone is not enough information to make a strong statement one way or the other. It does however, imply that the 'Detergents_Paper' feature may not add as much variance to the model as some of the other features, but it is still an important feature to include when considering relevance.</p>
 
 </div>
 </div>
@@ -12247,7 +12247,7 @@ I attempted to predict the annual spending on detergents and paper products. The
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Produce a scatter matrix for each pair of features in the data</span>
@@ -12292,12 +12292,12 @@ I attempted to predict the annual spending on detergents and paper products. The
 </div>
 
 <div class="output_area">
-<div class="prompt output_prompt">Out[5]:</div>
+<div class="prompt output_prompt">Out[11]:</div>
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.colorbar.Colorbar at 0x11ae41050&gt;</pre>
+<pre>&lt;matplotlib.colorbar.Colorbar at 0x117b53c10&gt;</pre>
 </div>
 
 </div>
@@ -15119,7 +15119,7 @@ The distibution for the dataset is clustered heavily near 0, with a few large ou
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Scale the data using the natural logarithm</span>
@@ -15170,12 +15170,12 @@ The distibution for the dataset is clustered heavily near 0, with a few large ou
 </div>
 
 <div class="output_area">
-<div class="prompt output_prompt">Out[6]:</div>
+<div class="prompt output_prompt">Out[12]:</div>
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.colorbar.Colorbar at 0x11baaaf50&gt;</pre>
+<pre>&lt;matplotlib.colorbar.Colorbar at 0x11707bb10&gt;</pre>
 </div>
 
 </div>
@@ -19823,7 +19823,7 @@ mSXr/wN44sgGFGEgqAAAAABJRU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Display the log-transformed sample data</span>
@@ -19929,7 +19929,7 @@ Once you have performed this implementation, the dataset will be stored in the v
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># For each feature find the data points with extreme high or low values</span>
@@ -20754,7 +20754,7 @@ Several data points are outliers in multiple categories, warranting their remova
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Apply PCA by fitting the good data with the same number of dimensions as features</span>
@@ -20767,6 +20767,7 @@ Several data points are outliers in multiple categories, warranting their remova
 
 <span class="c1"># Generate PCA results plot</span>
 <span class="n">pca_results</span> <span class="o">=</span> <span class="n">vs</span><span class="o">.</span><span class="n">pca_results</span><span class="p">(</span><span class="n">good_data</span><span class="p">,</span> <span class="n">pca</span><span class="p">)</span>
+<span class="n">pca_results</span><span class="o">.</span><span class="n">cumsum</span><span class="p">()</span>
 </pre></div>
 
 </div>
@@ -20776,6 +20777,106 @@ Several data points are outliers in multiple categories, warranting their remova
 <div class="output_wrapper">
 <div class="output">
 
+
+<div class="output_area">
+<div class="prompt output_prompt">Out[15]:</div>
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style>
+    .dataframe thead tr:only-child th {
+        text-align: right;
+    }
+
+    .dataframe thead th {
+        text-align: left;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Explained Variance</th>
+      <th>Fresh</th>
+      <th>Milk</th>
+      <th>Grocery</th>
+      <th>Frozen</th>
+      <th>Detergents_Paper</th>
+      <th>Delicatessen</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Dimension 1</th>
+      <td>0.4430</td>
+      <td>0.1675</td>
+      <td>-0.4014</td>
+      <td>-0.4381</td>
+      <td>0.1782</td>
+      <td>-0.7514</td>
+      <td>-0.1499</td>
+    </tr>
+    <tr>
+      <th>Dimension 2</th>
+      <td>0.7068</td>
+      <td>-0.5184</td>
+      <td>-0.5686</td>
+      <td>-0.5088</td>
+      <td>-0.3223</td>
+      <td>-0.7938</td>
+      <td>-0.6440</td>
+    </tr>
+    <tr>
+      <th>Dimension 3</th>
+      <td>0.8299</td>
+      <td>-1.1958</td>
+      <td>-0.5284</td>
+      <td>-0.5283</td>
+      <td>-0.0073</td>
+      <td>-1.0055</td>
+      <td>-0.0154</td>
+    </tr>
+    <tr>
+      <th>Dimension 4</th>
+      <td>0.9311</td>
+      <td>-1.4001</td>
+      <td>-0.5156</td>
+      <td>-0.4726</td>
+      <td>0.7781</td>
+      <td>-0.7959</td>
+      <td>-0.5577</td>
+    </tr>
+    <tr>
+      <th>Dimension 5</th>
+      <td>0.9796</td>
+      <td>-1.4027</td>
+      <td>0.2036</td>
+      <td>-0.1172</td>
+      <td>0.7450</td>
+      <td>-1.3541</td>
+      <td>-0.7669</td>
+    </tr>
+    <tr>
+      <th>Dimension 6</th>
+      <td>1.0000</td>
+      <td>-1.3735</td>
+      <td>-0.3366</td>
+      <td>0.7033</td>
+      <td>0.7655</td>
+      <td>-1.5365</td>
+      <td>-0.7472</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
 
 <div class="output_area">
 <div class="prompt"></div>
@@ -21156,8 +21257,7 @@ AoYnSZIkSSpgeJIkSZKkAoYnSZIkSSrw/5d1WGZ+QgXJAAAAAElFTkSuQmCC
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer:</strong>
-In total, the first two principal components explain 70 % of the variance in the model. The first four principal components explained 93% of the variance.</p>
+<h1 id="Answer:"><strong>Answer:</strong><a class="anchor-link" href="#Answer:">&#182;</a></h1><p>In total, the first two principal components explain 70 % of the variance in the model. The first four principal components explained 93% of the variance.</p>
 <p>The first dimension has a strong negative weight for Detergent Paper, and positve weight for Fresh and Frozen, which implies customers spending only on food. This could represent a restaraunt.</p>
 <p>The second dimension has strong negative weights for Fresh, Frozen, and Delicatessen, which may represent conveniance stores.</p>
 <p>The third dimension has strong negative weight for Fresh, strong Positive weight for Delicatessen, and moderate positive weight for Frozen, which may represent a gas station.</p>
@@ -23993,7 +24093,7 @@ The assumption that changes affect all customers equally should be avoided. Inst
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong>
-The resulting cluster segment for each data point can be treated as a factor vairable, which can subsequently be used as the dependent "label" variable to train a supervised machine learning algorithm. Once the model is trained, it can be used to predict the appropriate label given only their estimated product spending.</p>
+The resulting cluster segment for each data point can be treated as a factor vairable, which can subsequently be inluded as a feature variable in a supervised machine learning algorithm. Once the model is trained, it can be used to predict additional useful information about the customers in different segments.</p>
 
 </div>
 </div>
