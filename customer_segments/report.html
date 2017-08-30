@@ -23924,7 +23924,7 @@ Sample point 2 predicted to be in Cluster 0
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong>
-Looking back to the predictions before analysis, sample point 0 was predicted to be a conveniance store, which matches with the model prediction. Sample point 1 was predicted to be a restaraunt, also consistent with the model. Sample point 2 was predicted to be a meat/market or deli, and was predicted by the model to be a restaraunt, which is somewhat consistent and likely the closest match given only two segments. Looking at the cluster visualization figure, it can be seen that this point is very close to the boundary between the two clusters, showing that it has indications of belonging to either cluster.</p>
+Looking back to the predictions before analysis, sample point 0 was predicted to be a conveniance store, which matches with the model prediction. Sample point 1 was predicted to be a restaraunt, also consistent with the model. Sample point 2 was predicted to be a meat/market or deli, and was predicted by the model to be a restaraunt, which is somewhat consistent and likely the closest match given only two segments. Looking at the cluster visualization figure, it can be seen that this point is very close to the boundary between the two clusters, showing that it has indications of belonging to both clusters.</p>
 
 </div>
 </div>
@@ -23968,7 +23968,7 @@ Looking back to the predictions before analysis, sample point 0 was predicted to
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong>
-The assumption that changes affect all customers equally should be avoided. Instead, A/B testing shoudl be done on each segment independently using a control and experiment group for each segment. The delivery service can be altered for each experiment group, and spending differences can be compared between the control and experiment group for each segment. By comparing the percent change in spending for each segment, the affect of the change can be quantitatively assessed for each segment.</p>
+The assumption that changes affect all customers equally should be avoided. Instead, A/B testing should be performed on each segment independently using a control and experiment group for each segment. The delivery service can be altered for each experiment group, and spending differences can be compared between the control and experiment group for each segment. By comparing the percent change in spending, the affect of the change can be quantitatively assessed for each segment.</p>
 
 </div>
 </div>
@@ -24768,7 +24768,7 @@ TkSuQmCC
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong>
-The Gaussian mixture model with two clusters is consistent with the underlying distribution. Overall, the GMM separated the clusters better with less overlappin between the two. There are customer segments that would be classified as purely Retailers or Hotels/Restaurants/Cafes by this distribution, but there is also some overlapping between the segments. The predictions made for samples 0 and 1 are exactly consisted with the model. The prediction for sample 2 was meat market or deli, where meat market fits with segment 1 and deli fits with segment 0. As previously noted sample 2 was on the border of the two segments meaning it showed signs of belonging to either segment. The model predicted it was a Hotel/Restaurant/Cafe, however it is labeled as a retailer in the dataset. While this data pointt was labelled incorrectly, it can be seen on clustering "channel" plot to be overlapped in the Hotel/Restaraunt/Cafe cluster. Overall I would consider the model's classifications as consistent with my previous definitions of the customer segments.</p>
+The Gaussian mixture model with two clusters is consistent with the underlying distribution. Overall, the GMM separated the clusters better with less overlapping between the two. There are customer segments that would be classified as purely Retailers or Hotels/Restaurants/Cafes by this distribution, but there is also some overlapping between the segments. The predictions made for samples 0 and 1 are exactly consistent with the model. The prediction for sample 2 was a meat market or deli, where meat market fits with segment 1 but deli fits with segment 0. As previously noted, sample 2 was on the border of the two segments predcicted by GMM, meaning it showed signs of belonging to both segments. The model predicted it was a Hotel/Restaurant/Cafe, however it is labeled as a retailer in the dataset. While this data point was labelled incorrectly, it can be seen on clustering "channel" plot to be overlapped in the Hotel/Restaraunt/Cafe cluster. Overall I would consider the model's classifications as consistent with my previous definitions of the customer segments.</p>
 
 </div>
 </div>
