@@ -525,10 +525,7 @@
  -- left : -7.86
 
 ('left', 'green', 'forward', 'forward')
- -- forward : 0.93
- -- None : -0.95
- -- right : 0.23
- -- left : -3.92
+
 
 ('right', 'green', None, 'forward')
  -- forward : 0.53
